@@ -11,7 +11,7 @@
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:onClick="buttonOnClick"
-        android:text="Next view"
+        android:text="@string/next_view"
         />
 
 </LinearLayout>

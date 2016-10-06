@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="108dp"
-        android:background="#0084b4"></FrameLayout>
+        android:background="#0084b4" />
 
 
     <FrameLayout
@@ -15,50 +16,198 @@
         android:layout_height="139dp"
         android:layout_marginTop="108dp"
         android:background="@drawable/layout_border">
+
         <Button
             android:layout_width="207dp"
             android:layout_height="32dp"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="140dp"
-            android:text="Настроить профиль"
-            android:textColor="#657786"
+            android:layout_marginTop="10dp"
             android:background="@drawable/button_custom_background"
-            />
+            android:text="@string/profile_settings"
+            android:textColor="#657786" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Имя Фамилия"
-            android:layout_marginTop="64dp"
             android:layout_marginLeft="12dp"
+            android:layout_marginTop="64dp"
+            android:text="@string/fname_sname"
+            android:textColor="#000"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="#000"/>
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="/@namesurname"
+            android:layout_marginLeft="12dp"
             android:layout_marginTop="88dp"
-            android:layout_marginLeft="12dp"/>
+            android:text="@string/namesurname" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="6 читает"
+            android:layout_marginLeft="12dp"
             android:layout_marginTop="116dp"
-            android:layout_marginLeft="12dp"/>
+            android:text="@string/_6" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4 читатели"
+            android:layout_marginLeft="88dp"
             android:layout_marginTop="116dp"
-            android:layout_marginLeft="88dp"/>
+            android:text="@string/_4" />
     </FrameLayout>
 
     <ImageButton
+        android:id="@+id/imageButton4"
         android:layout_width="120dp"
         android:layout_height="110dp"
-        app:srcCompat="@drawable/ic_launcher_twitter"
-        android:background="?attr/selectableItemBackground"
         android:layout_marginTop="61dp"
-        android:id="@+id/imageButton4" />
+        android:background="?attr/selectableItemBackground"
+        app:srcCompat="@drawable/ic_launcher_twitter" />
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="256dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_border" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="308dp"
+        android:background="@drawable/layout_border">
+
+        <ImageButton
+            android:id="@+id/imgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_launcher_twitter" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgBtn"
+            android:paddingLeft="10dp"
+            android:text="@string/twitter"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/text1"
+            android:paddingLeft="12dp"
+            android:text="@string/twitter_acc"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/imgBtn"
+            android:text="@string/some_text"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/imgBtn"
+            android:layout_toRightOf="@+id/imgBtn"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_activity_rt_tweet_default" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/imgBtn"
+            android:layout_toRightOf="@+id/imgBtn"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_activity_heart_tweet_default" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="202dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/imgBtn"
+            android:layout_toRightOf="@+id/imgBtn"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_tweet_action_inline_dm_deepgray" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/imgBtn"
+            android:layout_toRightOf="@+id/imgBtn"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_social_proof_conversation" />
+
+    </RelativeLayout>
 
 </FrameLayout>

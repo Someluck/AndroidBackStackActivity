@@ -18,7 +18,7 @@ public class TwitterActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        TabHost tabHost = (TabHost)findViewById(R.id.tabHost);
+        TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
 
         tabHost.setup();
 

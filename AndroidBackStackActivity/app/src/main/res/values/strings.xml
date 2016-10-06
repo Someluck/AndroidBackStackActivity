@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">AndroidBackStackActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="next_view">Next view</string>
+    <string name="congrats_you_are_accepted">Congrats! You are accepted!!!!</string>
+    <string name="profile_settings">Настроить профиль</string>
+    <string name="fname_sname">Имя Фамилия</string>
+    <string name="namesurname">/@namesurname</string>
+    <string name="_6">6 читает</string>
+    <string name="_4">4 читатели</string>
+    <string name="twitter">Twitter</string>
+    <string name="twitter_acc">\@twitter</string>
+    <string name="some_text">Thursday Night Football is LIVE on Twitter Thursday at 8pm ET! Retweet for a reminder to watch on game day/</string>
+    <string name="main_page_title">Главная</string>
 </resources>
