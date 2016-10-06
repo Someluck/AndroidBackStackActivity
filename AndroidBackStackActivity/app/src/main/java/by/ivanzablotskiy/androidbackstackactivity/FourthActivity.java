@@ -22,12 +22,12 @@ public class FourthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
         Toast.makeText(this, "Fourth activity launched", Toast.LENGTH_SHORT).show();
-        textView= ((TextView) findViewById(R.id.textView));
+        textView = ((TextView) findViewById(R.id.textView));
         textView.setText(ACTIVITY_NAME);
     }
 
     public void buttonOnClick(View view) {
-        Intent intent=new Intent(this,FifthActivity.class);
+        Intent intent = new Intent(this, FifthActivity.class);
         startActivity(intent);
     }
 

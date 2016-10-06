@@ -22,13 +22,12 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
         Toast.makeText(this, "second activity launched", Toast.LENGTH_SHORT).show();
-        textView= ((TextView) findViewById(R.id.textView));
+        textView = ((TextView) findViewById(R.id.textView));
         textView.setText(ACTIVITY_NAME);
     }
 
     public void buttonOnClick(View view) {
-        Intent intent=new Intent(this,ThirdActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
     }
 }
