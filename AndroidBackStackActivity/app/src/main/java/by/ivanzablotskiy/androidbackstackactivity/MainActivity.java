@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Main activity launched", Toast.LENGTH_SHORT).show();
 
     }
-    
+
     public void launchMode() {
         if (sharedPreferences.contains(IS_FIRST_TIME_LAUNCH)) {
             if (sharedPreferences.getBoolean(IS_FIRST_TIME_LAUNCH, false)) {
