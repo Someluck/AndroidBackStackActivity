@@ -1,5 +1,8 @@
-BackStackACtivity and Twitter layouts.
+BackStackACtivity and Twitter layouts.\r\n
+
+
 ![Tap](https://github.com/Someluck/AndroidBackStackActivity/blob/master/Screenshot_10.jpg)
 ![Tap](https://github.com/Someluck/AndroidBackStackActivity/blob/master/Screenshot_9.jpg)
+
 ![Tap](https://github.com/Someluck/AndroidBackStackActivity/blob/master/Screenshot_11.jpg)
 ![Tap](https://github.com/Someluck/AndroidBackStackActivity/blob/master/Screenshot_12.jpg)
