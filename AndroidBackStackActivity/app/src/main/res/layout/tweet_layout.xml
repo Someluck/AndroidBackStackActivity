@@ -1,112 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="52dp">
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.1"
-            app:srcCompat="@drawable/ic_menu_black_24dp"
-            android:background="?attr/selectableItemBackground"
-        />
-        <TextView
-            android:paddingTop="13dp"
-            android:paddingLeft="20dp"
-            android:layout_width="0dp"
-            android:layout_height="52dp"
-            android:layout_weight="0.8"
-            android:text="Главная"
-            android:textSize="20sp"
-            android:gravity="left"
-            android:textColor="#000"/>
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            app:srcCompat="@drawable/ic_search_black_24dp"
-            android:background="?attr/selectableItemBackground"
-            android:layout_weight="0.1" />
-    </LinearLayout>
-
-    <TabHost
-        android:id="@+id/tabHost"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="53dp"
-        >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:orientation="vertical">
-
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/layout_border"
-                />
-
-            <FrameLayout
-                android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-                <LinearLayout
-                    android:id="@+id/tab2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/tab3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/tab1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    tools:background="@color/colorFloatingButton">
-
-                </LinearLayout>
-            </FrameLayout>
-        </LinearLayout>
-    </TabHost>
-
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="126dp"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:fabSize="mini"
-        android:background="@color/colorFloatingButton"
-
-        android:paddingLeft="0dp"
-        app:backgroundTint="@color/colorFloatingButton"
-        android:layout_gravity="bottom|right"
-        android:layout_margin="15dp"
-        app:srcCompat="@drawable/ic_fab_compose_write"/>
-
+    android:layout_width="match_parent" android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="106dp"
-        android:background="@drawable/layout_border">
+        android:layout_height="wrap_content">
         <ImageButton
             android:id="@+id/imgBtn"
             android:layout_width="wrap_content"
@@ -188,4 +86,4 @@
             android:layout_marginTop="4dp"/>
 
     </RelativeLayout>
-</FrameLayout>
+</merge>

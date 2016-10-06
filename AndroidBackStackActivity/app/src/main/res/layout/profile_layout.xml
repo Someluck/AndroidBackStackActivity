@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:background="#0084b4"></FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/layout_border">
+        <Button
+            android:layout_width="207dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="140dp"
+            android:text="Настроить профиль"
+            android:textColor="#657786"
+            android:background="@drawable/button_custom_background"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя Фамилия"
+            android:layout_marginTop="64dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/@namesurname"
+            android:layout_marginTop="88dp"
+            android:layout_marginLeft="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 читает"
+            android:layout_marginTop="116dp"
+            android:layout_marginLeft="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 читатели"
+            android:layout_marginTop="116dp"
+            android:layout_marginLeft="88dp"/>
+    </FrameLayout>
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/ic_launcher_twitter"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginTop="61dp"
+        android:id="@+id/imageButton4" />
+
+</FrameLayout>
