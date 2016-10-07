@@ -47,10 +47,10 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".TwitterActivity">
+        <activity android:name=".ui.TwitterActivity">
             <intent-filter><action android:name="android.intent.action.RUN"/></intent-filter>
         </activity>
-        <activity android:name=".ProfileActivity">
+        <activity android:name=".ui.ProfileActivity">
             <intent-filter><action android:name="android.intent.action.RUN"/></intent-filter>
         </activity>
 

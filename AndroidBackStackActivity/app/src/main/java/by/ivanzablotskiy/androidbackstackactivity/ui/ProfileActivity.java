@@ -1,10 +1,12 @@
-package by.ivanzablotskiy.androidbackstackactivity;
+package by.ivanzablotskiy.androidbackstackactivity.ui;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TabHost;
+
+import by.ivanzablotskiy.androidbackstackactivity.R;
 
 
 public class ProfileActivity extends AppCompatActivity {

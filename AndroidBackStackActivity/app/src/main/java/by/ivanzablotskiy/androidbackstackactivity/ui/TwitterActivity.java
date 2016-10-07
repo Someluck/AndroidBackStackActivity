@@ -1,4 +1,4 @@
-package by.ivanzablotskiy.androidbackstackactivity;
+package by.ivanzablotskiy.androidbackstackactivity.ui;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
+
+import by.ivanzablotskiy.androidbackstackactivity.R;
 
 public class TwitterActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
